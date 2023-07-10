@@ -67,7 +67,7 @@ function getCheckedItems(orderData, filteredData) {
   getCheckedRows = [];
 }
 
-  document.getElementById("sign-out").addEventListener("click", function () {
+document.getElementById("sign-out").addEventListener("click", function () {
   localStorage.setItem("loginStatus", false);
   location.assign("./index.html");
 });
