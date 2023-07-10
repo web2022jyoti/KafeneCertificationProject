@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafene Project</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="nav-container">
+                <div id="logo-wrapper">
+                    <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="logo">
+                    <p>Kafene</p>
+                </div>
+                <div id="pages-nav-wrapper">
+                    <a class="nav-a-tag" id="nav-active" href="./orders.html">Orders</a>
+                    <a class="nav-a-tag" href="./products.html">Products</a>
+                    <a class="nav-a-tag" href="./users.html">Users</a>
+                </div>
+            </div>
+            <a href="#" class="logout" id="sign-out">Logout</a>
+        </nav>
+    </header>
+    <main class="orders-main-section">
+        <div class="orders-container-wrapper">
+          <h1>Orders</h1>
+          <div class="orders-container">
+            <div class="orders-filter-section">
+              <h3>Filters</h3>
+              <div class="orders-filter-option">
+                <p id="table-count">count: 100</p>
+                <label class="orders-filter-option-checkbox">
+                  <input class="check-boxes" id="check-0" type="checkbox" name="New" checked />
+                  New
+                </label>
+                <label class="orders-filter-option-checkbox">
+                  <input class="check-boxes" id="check-1" type="checkbox" name="Packed" checked/>
+                  Packed
+                </label>
+                <label class="orders-filter-option-checkbox">
+                  <input class="check-boxes" id="check-2" type="checkbox" name="InTransit" checked/>
+                  InTransit
+                </label>
+                <label class="orders-filter-option-checkbox">
+                  <input class="check-boxes" id="check-3" type="checkbox" name="Delivered" checked/>
+                  Delivered
+                </label>
+              </div>
+            </div>
+            <div class="orders-table-section">
+              <table class="orders-table">
+                <tr>
+                  <th>ID</th>
+                  <th>Customer</th>
+                  <th>Date</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                </tr>
+                <tbody id="table-data"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+    <script src="./orders.js"></script>
+</body>
+</html>
